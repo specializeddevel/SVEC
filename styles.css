@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    /*determina como se comportan las imagenes mediante flex*/
+    /*ajusta las imagenes para que quepan bien en el contenedor*/
+    object-fit: cover;    
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    /*coloca los elementos en varias filas cuando se queda sin espacio*/
+    flex-wrap: wrap;
+    /*determina como se posicionan los elementos dentro de un contenedor flex*/
+    justify-content: center;
+    /*posiciona el contenido flex a lo largo del eje transversal
+    en este caso como el transversal es horizontal (row), centrara los elementos 
+    verticalmente porque el transversal sera vertical */
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    /*La propiedad CSS abreviada gap establece los espacios, también conocidos como canales,
+    entre filas y columnas. La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan
+    esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.*/
+    gap: 16px;
+    
+    
+}
+
